@@ -7,5 +7,5 @@ locals {
     }
   )
 
-  vnet_name = var.vnet_name != null ? var.vnet_name : "${var.teamid}-${var.prjid}"
+  virtual_network_name = var.virtual_network_name != null ? var.virtual_network_name : "${var.teamid}-${var.prjid}"
 }

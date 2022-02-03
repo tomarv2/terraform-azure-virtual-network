@@ -105,3 +105,38 @@ module "vnet" {
 ```
 
 Please refer to examples directory [link](examples) for references.
+
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.1 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 2.90 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 2.90 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurerm_virtual_network.network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | The address space that is used the virtual network. You can supply more than one address space | `list(string)` | <pre>[<br>  "10.0.0.0/16"<br>]</pre> | no |
+| <a name="input_deploy_virtual_network"></a> [deploy\_virtual\_network](#input\_deploy\_virtual\_network) | feature flag to deploy this resource or not | `bool` | `true` | no |
+| <a name="input_location"></a> [location](#input\_location) | The location/region where the virtual network is created. Changing this forces a new resource to be created. | `string` | `"westus2"` | no |
+| <a name="input_prjid"></a> [prjid](#input\_prjid) | (Required) Name of the project/stack e.g: mystack, nifieks, demoaci. Should not be changed after running 'tf apply' | `string` | n/a | yes |
+| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the virtual network. | `string` | n/a | yes |
+| <a name="input_teamid"></a> [teamid](#input\_teamid) | (Required) Name of the team/group e.g. devops, dataengineering. Should not be changed after running 'tf apply' | `string` | n/a | yes |
+| <a name="input_virtual_network_name"></a> [virtual\_network\_name](#input\_virtual\_network\_name) | Virtual network name | `string` | `null` | no |

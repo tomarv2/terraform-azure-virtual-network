@@ -25,13 +25,13 @@ variable "cidr_block" {
   default     = ["10.0.0.0/16"]
 }
 
-variable "deploy_vnet" {
+variable "deploy_virtual_network" {
   description = "feature flag to deploy this resource or not"
   default     = true
   type        = bool
 }
 
-variable "vnet_name" {
+variable "virtual_network_name" {
   description = "Virtual network name"
   default     = null
   type        = string
