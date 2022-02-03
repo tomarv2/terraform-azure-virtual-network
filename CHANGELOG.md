@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [v0.0.1](https://github.com/tomarv2/terraform-azure-vnet/releases/tag/v0.0.1) - 2022-02-03 16:46:54
+## [v0.0.1](https://github.com/tomarv2/terraform-azure-vnet/releases/tag/v0.0.1) - 2022-02-03 16:51:43
 
 *No description*
 
